@@ -1,0 +1,126 @@
+.good{
+	width: 7.2rem;
+	height: 5.2rem ; 
+	border-bottom: .01rem solid #d6d6d6;
+	box-sizing: border-box;
+}
+.good img{
+	width: 5.14rem;
+	height: 5.14rem;
+	display: block;
+	margin: 0 auto 3px;
+}
+
+.cont{
+	height: 80px;
+	box-sizing: border-box;
+}
+.good_name{
+	font-size: .34rem;
+	height: .66rem;
+	line-height: .66rem;
+	color: #5a5a5a;
+}
+.l1,.l3{
+	font-size: .2rem;
+}
+.l1{
+	overflow: hidden;
+	height: .34rem;
+	line-height: .34rem;
+}
+.l1 .fl{
+	color: #ff7200;
+}
+.l2{
+	width: 100%;
+	height: .1rem;
+	background-color: #b6b6b6;
+	margin: .02rem auto;
+	border-radius: 10rem;
+	position: relative;
+}
+.l2ing{
+	width: 0;
+	height: 100%;
+	max-width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color: #ffba00;
+	border-radius: 10rem;
+}
+.l3{
+	height: .32rem;
+	line-height: .32rem;
+	margin-bottom: .15rem;
+}
+.l3 .fl,.l3 .fr{
+	color: #9e9d9d;
+}
+.bl{
+	border-bottom: .01rem solid #d6d6d6; 
+}
+.db{
+	/*height: 1rem;*/
+	font-size: .24rem;
+	color: #5a5a5a;
+	line-height: 1rem;
+}
+.zj{
+	width:1.9rem;
+	height: .6rem;
+	background: url('../img/zj.jpg') no-repeat;
+	background-size: 100% 100%;
+	margin: .2rem auto;
+}
+.zj a{
+	display: inline-block;
+	height: 100%;
+	width: 33.33%;
+	text-align: center;
+	line-height: .6rem;
+}
+.zj a.num{
+	position: relative;
+}
+/*.zj input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	border: none;
+	background-color: transparent;
+	color: transparent;
+}*/
+.bw span{
+	width: .5rem;
+	height: .5rem;
+	background-color: #ffba00;
+	margin-left: .15rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: .5rem;
+	color: #fff;
+	display: inline-block;
+}
+.ljdb{
+	clear: both;
+	width: 6.5rem;
+	height: .8rem;
+	background-color: #ff248b;
+	line-height: .8rem;
+	color: #fff;
+	font-size: .34rem;
+	text-align: center;
+	border-radius: .15rem;
+	margin-bottom: .2rem;
+}
+.bl2{
+	width: 100%;
+	height: .1rem;
+	background-color: #ededed;
+}
+
+

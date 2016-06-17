@@ -1,0 +1,22 @@
+.lot_list:not(:last-child){
+	border-bottom: .09rem solid #ededed;
+}
+
+.list .li font{
+	font-size: .34rem;
+}
+.lot_det{
+	height: 1.6rem;
+	font-size: .24rem;
+	color: #9e9d9d;
+
+}
+.lot_det div{
+	margin-bottom: .08rem;
+}
+.lot_det div font{
+	margin-left: .2rem;
+}
+.lot_det .name{
+	padding-top:.1rem;
+}

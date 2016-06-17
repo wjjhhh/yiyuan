@@ -1,0 +1,168 @@
+html,body{font-size: 50px;}
+body{width: 7.2rem;margin: auto;}
+ul,ol{list-style-type: none;}
+body,ul,ol,h1,h2,h3,h4,h5,h6,dl,dd,form,p{margin: 0px; padding: 0px;font-family: "Microsoft YaHei"; }
+img{display:block;width:100%; }
+fieldset,img {border:0 none}  /* 重置fieldset（表单分组）、图片的边框为0*/
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */
+blockquote, q {quotes: none}   /* 重置嵌套引用的引号类型 */
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}  /* 重置嵌套引用*/
+input,select,textarea,button {vertical-align:middle;border:0;}  /* 重置表单控件垂直居中*/
+button {border:0 none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */
+body,th,td,input,select,textarea,button {line-height:1 ;color:#666} /* 重置页面文字属性 */
+a {color:#666;text-decoration:none}  /* 重置链接a标签 */ 
+a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}  /* 重置样式标签的样式 */
+caption {display:none;}    /* 重置表格标题为隐藏 */
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}    /* 重置table属性 */
+img{vertical-align:top}  /* 图片在当前行内的垂直位置 */	
+#wrap{width:7.2rem; margin:0 auto;}
+.fl{ float:left;}
+.fr{ float:right;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+.header{
+	width: 7.2rem;
+	/*max-width: 480px;*/
+	position: fixed;
+	z-index: 9;
+	height: .88rem;
+	line-height: .88rem;
+	background-color: #ff248b;
+	font-size: .4rem;
+	color: #fff;
+	text-align: center;
+}
+.title{
+	width: 7.2rem;
+	height: .88rem;
+	text-align: center;
+	position: relative;	
+}
+.back{
+	width: .24rem;
+	height: .41rem;
+	position: absolute;
+	left:.35rem;
+	top:50%;
+	margin-top: -.205rem;
+	background: url('../img/back.png') no-repeat;
+	background-size:100% 100%;    
+}
+.wrap_in{
+	width: 6.5rem;
+	margin: auto;	
+}
+.list{
+	border-bottom: .01rem solid #d6d6d6;
+	
+}
+.list .li{
+	min-height: .8rem;
+	line-height: .8rem;
+	font-size: .32rem;
+	color: #5a5a5a;
+	position: relative;
+}
+.list .li font{
+	font-size: .24rem;
+	color: #9e9d9d;
+}
+.list .li .go{
+	width:.18rem;
+	height: .3rem;
+	background:url('../img/go.png') no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	margin-top: -.15rem;
+	right: .1rem;
+}
+
+.mask{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 10;
+	top:0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+}
+.tan{
+	display: none;
+	width: 5.5rem;
+	background-color: #fff;
+	color: #fff;
+	position: fixed;
+	z-index: 11;
+	top:50%;
+	left: 50%;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);	
+	border-radius: .1rem;
+	
+}
+.tan_head{
+	height: .8rem;
+	background-color:#ff248b;
+	line-height: .8rem;
+    font-size: .34rem;
+    padding-left: .2rem;
+    position: relative;
+    border-radius: .1rem .1rem 0 0;
+}
+.tan .close{
+	width: .27rem;
+	height: .27rem;
+	background:url('../img/close.png') no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	margin-top: -.135rem;
+	right: .2rem;
+}
+.tan_content{
+	width: 5.1rem;
+	margin: auto;
+}
+.tan_content input{
+	width: 100%;
+	height: .8rem;
+	border:.01rem solid #d6d6d6;
+	box-sizing: border-box;
+	border-radius: .1rem;
+	margin: .2rem auto;
+	font-size: .34rem;
+}
+.tan_content input::-webkit-input-placeholder{
+	color:#9e9d9d;
+	font-size: .34rem;
+	line-height: .8rem;
+}
+.tan_content input[type="button"]{
+	background-color: #ff248b;
+	color: #fff;
+	-webkit-appearance:button;
+}
+.tan .tan_content{
+	color:#5a5a5a;
+}
+.tan .tan_content p{
+	margin: .2rem;
+}
+/*@media only screen and(min-width: 360px){ 
+	body{
+		background-color: blue;
+	}
+ }*/
+/* @media only screen and (orientation:landscape){
+		html{
+			font-size: 1rem;
+		}	
+ }*/

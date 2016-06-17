@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no"/>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 删除默认的苹果工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="HandheldFriendly" content="true">
+<!-- 微软的老式浏览器 -->
+<meta name="MobileOptimized" content="320">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- UC应用模式 -->
+<meta name="browsermode" content="application">
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<title>拼图夺宝</title>
+<link rel="stylesheet" href="css/public.css">
+<link rel="stylesheet" href="css/indiana.css">
+<script src="http://midas.gtimg.cn/h5sdk/js/api/h5sdk.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/rem.js"></script> 
+</head>
+<body style="margin:0 auto;">
+<div class="header"><span class="back"></span>我的夺宝</div>
+<div id="wrap">
+  <div class="title"></div>
+  <div class="user">
+   <div class="user_info wrap_in">
+    <img class="user_img" src="img/user.png"/>
+    <span class="youke">游客<font id="yk_id">050102</font></span>
+<!--     <div id="bang">
+      <span class="bi"></span><font>绑定手机</font>
+      <span class="rmb"></span><font class="m">10000</font><font>金币</font>
+    </div> -->
+   </div> 
+  </div> 
+   <div class="list">
+     <div class="li wrap_in myAdd">
+        <span>我的收货地址</span>
+        <span class="go"></span>   
+     </div>
+   </div>
+   <div class="list">
+     <div class="li wrap_in">
+        <span>夺宝记录</span>
+        <span class="go"></span>   
+     </div>
+   </div>
+   <div class="list">
+     <div class="li wrap_in">
+        <span>中奖记录</span>
+        <span class="go"></span>   
+     </div>
+   </div>       
+</div> 
+
+<!-- 弹窗部分 -->
+<!-- 遮罩 -->
+<div class="mask"></div>
+<!-- 我的收获地址 -->
+<div class="tan tan_add">
+  <div class="tan_head">我的收货地址<span class="close fr"></span></div>
+  <div class="tan_content">
+    <input type="text" name="" placeholder="收货人：" />
+    <input type="text" name="" placeholder="手机号码：" />
+    <input type="text" name="" placeholder="详细地址：" />
+    <input type="button" name="" value="保存"/>
+  </div>
+</div>
+<script type="text/javascript">
+$(".myAdd").click(function(){
+   $(".tan_add,.mask").show();
+});
+$(".tan .close").click(function(){
+    $(this).parents(".tan").hide();
+    $(".mask").hide();
+});
+
+</script>
+</body></html>

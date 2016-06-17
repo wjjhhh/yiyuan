@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="format-detection" content="telephone=no">
+<!-- <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0,user-scalable=no"/>
+ --><meta name="description" content="">
+<meta name="keywords" content="">
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 删除默认的苹果工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="HandheldFriendly" content="true">
+<!-- 微软的老式浏览器 -->
+<meta name="MobileOptimized" content="320">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- UC应用模式 -->
+<meta name="browsermode" content="application">
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<title>拼图夺宝</title>
+<link rel="stylesheet" href="css/public.css">
+<link rel="stylesheet" href="css/record.css">
+<script src="http://midas.gtimg.cn/h5sdk/js/api/h5sdk.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/rem.js"></script> 
+</head>
+<body style="margin:0 auto;">
+<div class="header"><span class="back"></span>夺宝记录</div>
+<div id="wrap">
+  <div class="title"></div>
+  <div class="lot_list">
+     <div class="list">
+       <div class="li wrap_in">
+          <span>中国黄金</span><font class="fr">期号：<span>100044</span></font>
+       </div>
+     </div> 
+     <div class="lot_det wrap_in">
+       <div class="status">状态<font>未中奖</font></div>
+       <div class="times">本期参与：<font>10</font>次</div>
+       <div class="time">揭奖时间：<font>2016-04-07 12:00:30</font></div> 
+       <div class="check">查看夺宝号<span></span></div>  
+       <div class="result">
+         <div class="name">获奖者：<font>154584566</font></div>
+         <div class="num">幸运夺宝号：<font>100059</font></div>
+         <div class="times">本期参与：<font>10</font>次</div>
+         <div class="time">揭奖时间：<font>2016-04-07 12:00:30</font></div>         
+       </div>   
+     </div>   
+  </div>
+  <div class="lot_list">
+     <div class="list">
+       <div class="li wrap_in">
+          <span>中国黄金</span><font class="fr">期号：<span>100044</span></font>
+       </div>
+     </div> 
+     <div class="lot_det wrap_in">
+       <div class="status">状态<font>未揭晓</font></div>
+       <div class="times">本期参与：<font>10</font>次</div>
+       <div class="time">揭奖时间：<font>2016-04-07 12:00:30</font></div>
+       <div class="check">查看夺宝号<span></span></div>
+     </div>   
+  </div>
+  <div class="lot_list">
+     <div class="list">
+       <div class="li wrap_in">
+          <span>中国黄金</span><font class="fr">期号：<span>100044</span></font>
+       </div>
+     </div> 
+     <div class="lot_det wrap_in">
+       <div class="status">状态<font>已中奖</font></div>
+       <div class="times">本期参与：<font>10</font>次</div>
+       <div class="time">揭奖时间：<font>2016-04-07 12:00:30</font></div>
+       <div class="check">查看夺宝号<span></span></div> 
+       <div class="result">
+         <div class="name">获奖者：<font>154584566</font></div>
+         <div class="num">幸运夺宝号：<font>100059</font></div>
+         <div class="times">本期参与：<font>10</font>次</div>
+         <div class="time">揭奖时间：<font>2016-04-07 12:00:30</font></div>         
+       </div>   
+     </div>   
+  </div>               
+</div> 
+
+<!-- 弹窗部分 -->
+<!-- 遮罩 -->
+<div class="mask"></div>
+<!-- 幸运夺宝号 -->
+<div class="tan tan_num">
+  <div class="tan_head"><span class="t">幸运夺宝号</span><span class="close fr"></span></div>
+  <div class="tan_content">
+   <div class="bq">本期参与<span>10</span>人次</div>
+   <div class="numList">
+     <span>100002、</span><span>100002、</span><span>100002、</span><span>100002、</span><span>10002、</span>
+     <span>100002、</span><span>100002、</span><span>100002、</span><span>100002、</span>
+   </div>
+  </div>
+</div>
+<!-- 备用提示弹框 -->
+<div class="tan tips">
+  <div class="tan_head"><span class="t"></span><span class="close fr"></span></div>
+  <div class="tan_content">
+    <p></p>
+  </div>  
+</div>
+<script type="text/javascript">
+  $(".check").click(function(){
+    $(".tan_num,.mask").show();
+  });
+$(".tan .close").click(function(){
+    $(this).parents(".tan").hide();
+    $(".mask").hide();
+});
+</script>
+</body></html>

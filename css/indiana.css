@@ -1,0 +1,69 @@
+.user{
+	width: 7.2rem;
+	height: 2.6rem;
+	background-color: #ee6c94;
+	position: relative;
+}
+.user_info{
+	height: 1.34rem;
+	position: absolute;
+	top:50%;
+	margin-top: -.67rem;
+	left: 0;
+	right: 0;	
+}
+.user_img{
+	width: 1.34rem;
+	height: 1.34rem;
+	display: inline-block;
+    margin-right: .35rem;
+    border-radius: 50%;
+}
+.youke{
+	color: #fff;
+	font-size: .34rem;
+	position: absolute;
+	top:.15rem;
+}
+#bang{
+	/*width: 1.6rem;*/
+	height: .5rem;
+	padding: 0 .19rem;
+	display: inline-block;
+	color: #f7f7f7;
+	font-size: .24rem;
+	line-height: .5rem;
+	text-align: center;
+	border: .02rem solid #fff;
+	border-radius: .5rem;
+	box-sizing: border-box;
+	position: absolute;
+	bottom:.01rem;
+
+}
+#bang .bi{
+	width: .26rem;
+	height: .26rem;
+	background:url('../img/bang.png') no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	margin-top: -.13rem;
+}
+#bang .rmb{
+	width: .3rem;
+	height: .3rem;
+	background:url('../img/rmb.png') no-repeat;
+	background-size: 100% 100%;
+	display: inline-block;
+	position: absolute;
+	top:50%;
+	margin-top: -.15rem;		
+}
+#bang font{
+	margin-left: .3rem;
+}
+#bang font.m{
+	margin: 0 -.3rem 0 .4rem;
+}

@@ -1,0 +1,170 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="author" content="">
+<meta name="copyright" content="">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=360,minimum-scale=1.0,maximum-scale=5.0,user-scalable=no"/>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 删除默认的苹果工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="HandheldFriendly" content="true">
+<!-- 微软的老式浏览器 -->
+<meta name="MobileOptimized" content="360">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- UC应用模式 -->
+<meta name="browsermode" content="application">
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="applicable-device" content="mobile">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>拼图夺宝</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/rem.js"></script>
+<link rel="stylesheet" href="css/public.css">
+<link rel="stylesheet" href="css/css.css">
+  <script type="text/javascript">
+     // var u = navigator.userAgent;
+     //      var browser = {
+     //          isMobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+     //          isAndroid: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+     //          isIos: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+     //          isIos7: u.indexOf('7.0 Mobile') > -1
+     //      };
+
+     //      if(browser.isMobile) {
+     //          var uiWidth = 480;
+     //          var vp = document.getElementById("viewport");
+     //          var dpi = "";
+     //          if(browser.isAndroid && typeof uiWidth === "number"){
+     //              var deviceWidth = Math.min(window.screen.availWidth, Math.min(window.screen.width, window.outerWidth > 0 ? window.outerWidth : 9999999));
+     //              dpi = ",target-densitydpi=" + ((uiWidth / deviceWidth) * window.devicePixelRatio * 160);
+     //          }
+     //          if (vp != undefined) {
+     //              if(browser.isIos && browser.isIos7) {
+     //                  vp.content = "width="+uiWidth+",user-scalable=no";
+     //              } else {
+     //                  vp.content = "width="+uiWidth+",minimal-ui,user-scalable=no" + dpi + ",maximum-scale=1.0";
+     //              }
+     //          }
+     //      }
+
+    </script> 
+</head>
+<!-- ////////////////////////////////////////////////////////////////////
+//                            _ooOoo_                             //
+//                           o8888888o                            //    
+//                           88" . "88                            //    
+//                           (| -_- |)                            //    
+//                           O\  =  /O                            //
+//                        ____/`---'\____                         //                        
+//                      .'  \\|     |//  `.                       //
+//                     /  \\|||  :  |||//  \                      //    
+//                    /  _||||| -:- |||||-  \                     //
+//                    |   | \\\  -  /// |   |                     //
+//                    | \_|  ''\---/''  |   |                     //        
+//                    \  .-\__  `-`  ___/-. /                     //        
+//                  ___`. .'  /--.--\  `. . ___                   //    
+//                ."" '<  `.___\_<|>_/___.'  >'"".                //
+//              | | :  `- \`.;`\ _ /`;.`/ - ` : | |               //    
+//              \  \ `-.   \_ __\ /__ _/   .-` /  /               //
+//        ========`-.____`-.___\_____/___.-`____.-'========       //    
+//                             `=---='                            //
+//        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^      //
+//         佛祖保佑       永无BUG        永不修改                    //
+//////////////////////////////////////////////////////////////////// -->
+<body style="margin:0 auto;">
+<div class="header"><span class="back"></span>商品详情</div>
+<div id="wrap">
+   <div class="title"></div> 
+   <div class="good">
+     <img src="img/good1.png"/>
+   </div>
+   <div class="wrap_in">
+     <div class="good_name">Apple iPhone6S Plus 16G</div>
+     <div class="l1">
+       <span class="fl">价值：¥<span class="mon">5688</span></span>
+       <span class="fr">期号：<span>0025</span></span>
+     </div>
+     <div class="l2"><div class="l2ing"></div></div>
+     <div class="l3">
+       <span class="fl">总需人次：<span id="zx">88888</span></span>
+       <span class="fr">剩余人次：<span id="sy">2088</span></span>
+     </div> 
+   </div>
+   <div class="bl"></div>
+   <div class="wrap_in">
+     <div class="db">
+       <span class="fl">夺宝次数：</span>
+       <div class="zj fl">
+         <a class="jian fl"></a>
+         <!-- contenteditable="true" -->
+         <a class="num fl">1</a>
+         <a class="jia fr"></a>
+       </div>
+       <div class="bw fl">
+          <span>5</span>
+          <span>10</span>
+          <span>15</span>
+          <span>20</span>
+       </div>
+       <div class="ljdb">立即夺宝</div>
+     </div>     
+   </div>
+   <div class="bl2"></div>
+   <div class="list">
+     <div class="li wrap_in">
+        <span>往期揭晓</span>
+        <span class="go"></span>   
+     </div>
+   </div>
+   <div class="list">
+     <div class="li wrap_in">
+        <span>商品图文详情</span><font>（建议在WIFI环境下查看）</font>
+        <span class="go"></span>   
+     </div>
+   </div>       
+</div> 
+<!--以下是弹窗-->
+
+<script type="text/javascript">
+// 夺宝次数
+var n=parseInt($(".num").html());
+  $(".jian").click(function(){
+    (n>0)&&jj(-1);
+  });
+  $(".jia").click(function(){
+    (n<99&&n<sy)&&jj(1);
+  }); 
+function jj(sign){
+  $(".num").html(n+=sign);
+} 
+//剩余人次
+var sy=parseInt($("#sy").html());
+var zx=parseInt($("#zx").html());
+var xpercent=(1-sy/zx)*100;
+$(".l2ing").css("width",xpercent+'%');
+$(".bw span").click(function(){
+  var value=$(this).html();
+  if(parseInt(value)<=sy){
+    $(".zj .num").html(value);
+     } 
+  else{
+    $(".zj .num").html(sy);   
+    }
+   n=parseInt($(".zj .num").html());
+});  
+</script>
+</body></html>

@@ -1,0 +1,32 @@
+.list .li{
+	min-height: .86rem;
+	line-height: .86rem;
+}
+.list .li .go2{
+	width: .3rem;
+	height: .18rem;
+	background:url('../img/go2.png') no-repeat;
+	background-size: 100% 100%;
+	margin-top:0;
+	top:.34rem;
+	right: 0;
+	-webkit-transition: -webkit-transform .2s;
+}
+.list .li .go2s{
+	-webkit-transform:rotate(180deg);
+}
+.list .answer{
+	display: none;
+}
+.list .li p{
+	font-size: .24rem;
+	color: #9d9d9d;
+	line-height: initial;
+}
+.list .li p:first-child{
+	border-top:.01rem solid #d6d6d6;
+	padding-top: .13rem;
+}
+.list .li p:last-child{
+	padding-bottom: .31rem;	
+}
