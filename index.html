@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -32,59 +33,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <title>拼图夺宝</title>
 <script src="js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/rem.js"></script>
+<!-- <script type="text/javascript" src="js/rem.js"></script> -->
 <link rel="stylesheet" href="css/public.css">
 <link rel="stylesheet" href="css/css.css">
-  <script type="text/javascript">
-     // var u = navigator.userAgent;
-     //      var browser = {
-     //          isMobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
-     //          isAndroid: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
-     //          isIos: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-     //          isIos7: u.indexOf('7.0 Mobile') > -1
-     //      };
-
-     //      if(browser.isMobile) {
-     //          var uiWidth = 480;
-     //          var vp = document.getElementById("viewport");
-     //          var dpi = "";
-     //          if(browser.isAndroid && typeof uiWidth === "number"){
-     //              var deviceWidth = Math.min(window.screen.availWidth, Math.min(window.screen.width, window.outerWidth > 0 ? window.outerWidth : 9999999));
-     //              dpi = ",target-densitydpi=" + ((uiWidth / deviceWidth) * window.devicePixelRatio * 160);
-     //          }
-     //          if (vp != undefined) {
-     //              if(browser.isIos && browser.isIos7) {
-     //                  vp.content = "width="+uiWidth+",user-scalable=no";
-     //              } else {
-     //                  vp.content = "width="+uiWidth+",minimal-ui,user-scalable=no" + dpi + ",maximum-scale=1.0";
-     //              }
-     //          }
-     //      }
-
-    </script> 
 </head>
-<!-- ////////////////////////////////////////////////////////////////////
-//                            _ooOoo_                             //
-//                           o8888888o                            //    
-//                           88" . "88                            //    
-//                           (| -_- |)                            //    
-//                           O\  =  /O                            //
-//                        ____/`---'\____                         //                        
-//                      .'  \\|     |//  `.                       //
-//                     /  \\|||  :  |||//  \                      //    
-//                    /  _||||| -:- |||||-  \                     //
-//                    |   | \\\  -  /// |   |                     //
-//                    | \_|  ''\---/''  |   |                     //        
-//                    \  .-\__  `-`  ___/-. /                     //        
-//                  ___`. .'  /--.--\  `. . ___                   //    
-//                ."" '<  `.___\_<|>_/___.'  >'"".                //
-//              | | :  `- \`.;`\ _ /`;.`/ - ` : | |               //    
-//              \  \ `-.   \_ __\ /__ _/   .-` /  /               //
-//        ========`-.____`-.___\_____/___.-`____.-'========       //    
-//                             `=---='                            //
-//        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^      //
-//         佛祖保佑       永无BUG        永不修改                    //
-//////////////////////////////////////////////////////////////////// -->
 <body style="margin:0 auto;">
 <div class="header"><span class="back"></span>商品详情</div>
 <div id="wrap">
@@ -106,7 +58,7 @@
    </div>
    <div class="bl"></div>
    <div class="wrap_in">
-     <div class="db">
+     <div id="db">
        <span class="fl">夺宝次数：</span>
        <div class="zj fl">
          <a class="jian fl"></a>
@@ -121,7 +73,20 @@
           <span>20</span>
        </div>
        <div class="ljdb">立即夺宝</div>
-     </div>     
+     </div>
+     <!-- 等待开奖 -->
+     <div id="db2" style="display:none;">
+       <div class="ljdb" id="djs">揭晓倒计时: <span id="hour">00</span>:<span id="miniute">02</span>:<span id="second">53</span></div>
+     </div>
+     <!-- 开奖介绍 -->
+     <div id="db3" style="display:none;">
+        <div class="dblist">
+           <div>获奖者: <span>154584566</span></div>
+           <div>本期参与: <span>10</span>人次</div>
+           <div>揭奖时间: <span>2016-04-07 12:00:30</span></div>
+        </div>    
+       <div class="ljdb" id="lucky">幸运号码: <span>000045</span></div>
+     </div>    
    </div>
    <div class="bl2"></div>
    <div class="list">
@@ -137,8 +102,6 @@
      </div>
    </div>       
 </div> 
-<!--以下是弹窗-->
-
 <script type="text/javascript">
 // 夺宝次数
 var n=parseInt($(".num").html());
@@ -165,6 +128,30 @@ $(".bw span").click(function(){
     $(".zj .num").html(sy);   
     }
    n=parseInt($(".zj .num").html());
-});  
+}); 
+
+(function(){
+  var deadTime=new Date(2016,5,21,0,0,0).getTime();
+  var timer1=null;
+  var time=document.getElementById("djs");
+  var _hour=time.getElementsByTagName("span")[0];
+  var _miniute=time.getElementsByTagName("span")[1];
+  var _second=time.getElementsByTagName("span")[2];
+  function daoshu(){
+    (timer1)&&(clearTimeout(timer1));
+    var nowTime=Date.now();
+    var cTime=(deadTime-nowTime)<=0?0:(deadTime-nowTime)/1000;
+    var h=Math.floor(cTime/3600);
+    var m=Math.floor(cTime%3600/60);
+    var s=Math.floor(cTime%3600%60);
+    _hour.innerText=h<10?'0'+h:h;
+    _miniute.innerText=m<10?'0'+m:m;
+    _second.innerText=s<10?'0'+s:s;
+    timer1=setTimeout(function(){
+        daoshu();
+    },1000);
+  }
+    daoshu();
+}());
 </script>
 </body></html>

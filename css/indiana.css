@@ -12,6 +12,9 @@
 	left: 0;
 	right: 0;	
 }
+.user_info .usr{
+	display: inline-block;
+}
 .user_img{
 	width: 1.34rem;
 	height: 1.34rem;
@@ -22,8 +25,10 @@
 .youke{
 	color: #fff;
 	font-size: .34rem;
-	position: absolute;
-	top:.15rem;
+	/*position: absolute;*/
+	/*top:.15rem;*/
+	display: block;
+	margin-top: .2rem;
 }
 #bang{
 	/*width: 1.6rem;*/
@@ -38,7 +43,7 @@
 	border-radius: .5rem;
 	box-sizing: border-box;
 	position: absolute;
-	bottom:.01rem;
+	bottom:.02rem;
 
 }
 #bang .bi{
@@ -66,4 +71,36 @@
 }
 #bang font.m{
 	margin: 0 -.3rem 0 .4rem;
+}
+#dbb{
+	height: .3rem;
+	line-height: .3rem;
+	font-size: .24rem;
+	color: #f7f7f7;
+	position: relative;
+	margin-top: .34rem;
+}
+#dbb i{
+	height: .3rem;
+	width: .3rem;
+	background:url('../img/ques.png') no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top:50%;
+	margin-top: -.15rem;
+	margin-left:.15rem;
+}
+.ds{
+	font-size: .34rem;
+}
+.ds .tan_content p{
+	margin: .2rem 0;
+	border-bottom: .02rem #d6d6d6 solid;
+	padding-bottom: .2rem;
+}
+.ds .tipd{
+	color: #ff248b;
+	font-size: .22rem;
+	width: 5.1rem;
+	margin: 0 auto .4rem;
 }

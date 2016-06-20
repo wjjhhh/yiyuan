@@ -61,8 +61,7 @@
 .bl{
 	border-bottom: .01rem solid #d6d6d6; 
 }
-.db{
-	/*height: 1rem;*/
+#db{
 	font-size: .24rem;
 	color: #5a5a5a;
 	line-height: 1rem;
@@ -116,6 +115,20 @@
 	text-align: center;
 	border-radius: .15rem;
 	margin-bottom: .2rem;
+}
+#db2{
+	margin-top: .2rem;
+}
+#db3 .dblist{
+	height: 1.2rem;
+	font-size: .24rem;
+	color: #9e9d9d;	
+}
+#db3 .dblist>div{
+	line-height: .3rem;
+}
+#db3 .dblist div:first-child{
+	padding-top: .2rem;
 }
 .bl2{
 	width: 100%;

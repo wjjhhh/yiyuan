@@ -42,11 +42,16 @@
   <div class="user">
    <div class="user_info wrap_in">
     <img class="user_img" src="img/user.png"/>
-    <span class="youke">游客<font id="yk_id">050102</font></span>
-<!--     <div id="bang">
-      <span class="bi"></span><font>绑定手机</font>
-      <span class="rmb"></span><font class="m">10000</font><font>金币</font>
-    </div> -->
+    <div class="usr">
+      <span class="youke">游客<font id="yk_id">050102</font></span>
+  <!--     <div id="bang">
+        <span class="bi"></span><font>绑定手机</font>
+        <span class="rmb"></span><font class="m">10000</font><font>金币</font>
+      </div> -->
+      <div id="dbb">
+        夺宝币:<span>40</span>个<i></i>
+      </div>
+    </div>
    </div> 
   </div> 
    <div class="list">
@@ -82,6 +87,13 @@
     <input type="button" name="" value="保存"/>
   </div>
 </div>
+<div class="tan tips ds" style="display:none;">
+  <div class="tan_head"><span class="t"></span><span class="close"></span></div>
+  <div class="tan_content">
+    <p></p>
+  </div>
+  <p class="tipd">*夺宝币可以直接进行夺宝消费.1个夺宝币=1人民币*</p>
+</div>
 <script type="text/javascript">
 $(".myAdd").click(function(){
    $(".tan_add,.mask").show();
@@ -90,6 +102,9 @@ $(".tan .close").click(function(){
     $(this).parents(".tan").hide();
     $(".mask").hide();
 });
-
+//夺宝币介绍
+$("#dbb i").click(function(){
+  tips("夺宝币介绍","每天在美图游戏盒在线玩游戏中充值任意金额都可获得一个夺宝币，每天限一个，请不要错过哦。");
+});
 </script>
 </body></html>

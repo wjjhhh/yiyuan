@@ -30,7 +30,7 @@
 		// 	$('html').css('font-size', '75px');
 		// 	}
 		// }
-	
+	}
 $(document).ready(function(){
 // $('html').css('font-size', ($(window).width() / 7.2 * 75 / 16) + '%');
 // 720/16

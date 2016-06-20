@@ -24,7 +24,7 @@
 	line-height: initial;
 }
 .list .li p:first-child{
-	border-top:.01rem solid #d6d6d6;
+	border-top:.02rem solid #d6d6d6;
 	padding-top: .13rem;
 }
 .list .li p:last-child{
